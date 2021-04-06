@@ -1,0 +1,40 @@
+body{
+    height:100vh;
+    width:100vw;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.score{
+    position:absolute;
+    background-color:rgb(247, 244, 244) ;
+    border-radius: 10%;
+    font-family: 'Dela Gothic One', cursive;
+    font-size:4vmin;
+    top:5%;
+    left:5%;
+    width:20vmin;
+    height: 20vmin;
+    display: grid;
+    place-items: center;
+}
+#gameboard{
+    height:100vmin;
+    width:100vmin;
+    background-color: rgb(247, 244, 244);
+    display:grid;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr);
+}
+.snake{
+    background-color: rgb(218, 210, 206);
+    border:0.25vmin solid black;
+    border-radius: 1.5vmin;
+}
+.food{
+    background-color: hsl(320,100%,50%);
+    border:0.25vmin solid black;
+    border-radius: 1.5vmin;
+}
