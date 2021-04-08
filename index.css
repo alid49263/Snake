@@ -20,6 +20,19 @@ body{
     display: grid;
     place-items: center;
 }
+.highscore{
+    position:absolute;
+    background-color:rgb(247, 244, 244) ;
+    border-radius: 10%;
+    font-family: 'Dela Gothic One', cursive;
+    font-size:2.5vmin;
+    top:55%;
+    left:5%;
+    width:20vmin;
+    height: 20vmin;
+    display: grid;
+    place-items: center;
+}
 #gameboard{
     height:100vmin;
     width:100vmin;
@@ -37,4 +50,71 @@ body{
     background-color: hsl(320,100%,50%);
     border:0.25vmin solid black;
     border-radius: 1.5vmin;
+}
+.controller{
+    display:none
+}
+
+@media screen and (max-width: 600px){
+    .highscore{
+        position:absolute;
+        background-color:rgb(247, 244, 244) ;
+        border-radius: 10%;
+        font-family: 'Dela Gothic One', cursive;
+        font-size:2.5vmin;
+        top:5%;
+        left:70%;
+        width:25vmin;
+        height: 25vmin;
+        display: grid;
+        place-items: center;
+    }
+    .score{
+        position:absolute;
+        background-color:rgb(247, 244, 244) ;
+        border-radius: 10%;
+        font-family: 'Dela Gothic One', cursive;
+        font-size:2.5vmin;
+        top:5%;
+        left:5%;
+        width:25vmin;
+        height: 25vmin;
+        display: grid;
+        place-items: center;
+    }
+    .controller{
+        position:absolute;
+        top:80%;
+        height:20vh;
+        width:30vw;
+        display:grid;
+        place-items: center;
+    }
+    #top{
+        border: none;
+        background-color: #008CBA;
+        position:absolute;
+        top:0;
+        left:auto
+    }
+    #bottom{
+        border: none;
+        background-color: #008CBA;
+        position:absolute;
+        top:30%
+    }
+    #left{
+        border: none;
+        background-color: #008CBA;
+        position:absolute;
+        left:0;
+        top:30%
+    }
+    #right{
+        border: none;
+        background-color: #008CBA;
+        position:absolute;
+        right:0;
+        top:30%
+    }
 }
