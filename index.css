@@ -52,7 +52,8 @@ body{
     border-radius: 1.5vmin;
 }
 .controller{
-    display:none
+    display:none;
+    visiblity:none
 }
 
 @media screen and (max-width: 600px){
